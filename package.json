@@ -1,0 +1,37 @@
+
+---
+
+# 📦 `package.json`
+```json
+{
+  "name": "authshield",
+  "version": "1.0.0",
+  "description": "AuthShield - Authentication & RBAC example by NexByte Labs",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --watch src --exec \"node src/server.js\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,md,json}\"",
+    "test": "jest --runInBand"
+  },
+  "keywords": ["auth", "jwt", "rbac", "nexbyte", "node"],
+  "author": "NexByte Labs",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.3.0",
+    "jest": "^29.6.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.9.1",
+    "supertest": "^6.4.3"
+  }
+}
